@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+requests
+sqlalchemy
+psycopg2-binary
+python-multipart
+jinja2
+Mangum
