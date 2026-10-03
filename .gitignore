@@ -1,2 +1,13 @@
-.vercel
-.env*
+﻿# IDE / VSCode
+.vscode/
+.idea/
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Pre‑commit cache
+.pre-commit/
+
+# Vercel temporary folder
+.vercel/
