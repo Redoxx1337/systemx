@@ -1,14 +1,9 @@
-import sys
-from pathlib import Path
-
-# Add the project root to PYTHONPATH so backend modules can be imported
-project_root = Path(__file__).resolve().parents[2]
-sys.path.append(str(project_root))
-
-# Use Mangum (AWS Lambda adapter for ASGI) – required for Vercel serverless
-from mangum import Mangum
+# api/index.py
+# Vercel entry point for FastAPI application
 
 # Import the FastAPI app defined in backend/main.py
-from backend.main import app as fastapi_app
+from backend.main import app
 
-handler = Mangum(fastapi_app)
+# Export the ASGI app for Vercel. Vercel looks for a top‑level variable named
+# `app`, `application`, or `handler`. By exposing `app` directly the deployment
+# will succeed.

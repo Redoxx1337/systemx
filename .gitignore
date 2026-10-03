@@ -4,3 +4,5 @@ __pycache__/
 
 # mypy cache – НЕ отправлять в репозиторий и не загружать в Vercel
 .mypy_cache/
+.vercel
+.env*
