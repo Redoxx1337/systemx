@@ -1,11 +1,11 @@
 import sys
 from pathlib import Path
 
-# Add the root of the SystemX project to PYTHONPATH so we can import backend modules
+# Add the project root to PYTHONPATH so backend modules can be imported
 project_root = Path(__file__).resolve().parents[2]
 sys.path.append(str(project_root))
 
-# Use Mangum (AWS Lambda adapter for ASGI)
+# Use Mangum (AWS Lambda adapter for ASGI) – required for Vercel serverless
 from mangum import Mangum
 
 # Import the FastAPI app defined in backend/main.py

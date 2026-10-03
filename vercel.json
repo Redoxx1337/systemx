@@ -1,9 +1,4 @@
 {
-  "functions": {
-    "api/**/*.py": {
-      "runtime": "python@3.11"
-    }
-  },
   "builds": [
     {
       "src": "api/**/*.py",
