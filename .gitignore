@@ -1,13 +1,6 @@
-﻿# IDE / VSCode
-.vscode/
-.idea/
-
-# Python caches
+﻿# Python caches
 __pycache__/
 *.py[cod]
 
-# Pre‑commit cache
-.pre-commit/
-
-# Vercel temporary folder
-.vercel/
+# mypy cache – НЕ отправлять в репозиторий и не загружать в Vercel
+.mypy_cache/
